@@ -1,0 +1,6 @@
+{
+  "num_tasks": 399,
+  "embed_dim": 512,
+  "model": "openai/clip-vit-base-patch32",
+  "size_mb": 0.8932352066040039
+}

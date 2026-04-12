@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# IDE - PyCharm / IntelliJ
+.idea/
+*.iml
+.vscode/
+
+# 其他常见
+.DS_Store
+.env
+*.log

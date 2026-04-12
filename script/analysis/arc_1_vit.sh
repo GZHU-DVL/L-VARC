@@ -1,0 +1,1 @@
+python analysis.py --output-root outputs/ARC_1_eval_ViT_LARC_best_Con_attempt_1 --html-output "arc_agi_1_vit_best_Conv_1.html" --task-type ARC-AGI

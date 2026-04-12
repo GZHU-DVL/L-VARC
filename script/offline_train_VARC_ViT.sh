@@ -1,0 +1,25 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 offline_train_ARC.py \
+  --epochs 100 \
+  --depth 10 \
+  --batch-size 32 \
+  --image-size 64 \
+  --patch-size 2 \
+  --learning-rate 3e-4 \
+  --weight-decay 0 \
+  --embed-dim 512 \
+  --num-heads 8 \
+  --include-rearc \
+  --num-colors 12 \
+  --data-root "raw_data/ARC-AGI" \
+  --train-split "training" \
+  --wandb-project "VisionARC" \
+  --wandb-run-name "offline_train_VARC_GAP" \
+  --save-path "saves/offline_train_ViT/checkpoint_final_Con_LARC_GAP.pt" \
+  --best-save-path "saves/offline_train_ViT/checkpoint_best_Con_LARC_GAP.pt" \
+  --lr-scheduler "cosine" \
+  --architecture "vit" \
+  --vis-every 10 \
+  --distributed \
+  --use-wandb \
+  --use-larc \
+
